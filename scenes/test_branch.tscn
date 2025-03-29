@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://hxmctmrj68xa"]
 
-[ext_resource type="Script" path="res://Scripts/test_player.gd" id="1_2qdxu"]
+[ext_resource type="Script" uid="uid://btldatwsxhfso" path="res://Scripts/test_player.gd" id="1_2qdxu"]
 [ext_resource type="Texture2D" uid="uid://clwkmypjely33" path="res://icon.svg" id="2_v4uhs"]
 
 [node name="Test Branch" type="Node2D"]
