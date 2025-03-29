@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cf8rok1bqhlnc"]
+
+[ext_resource type="Script" uid="uid://cw8g7d0uuokos" path="res://Scripts/player_dungeoneer_controller.gd" id="1_laqkh"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_y0yd0"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_laqkh"]
+size = Vector3(0.43, 0.3, 0.845)
+
+[node name="Player Dungeoneer Controller" type="CharacterBody3D"]
+script = ExtResource("1_laqkh")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_y0yd0")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.523408)
+mesh = SubResource("BoxMesh_laqkh")
